@@ -1,6 +1,7 @@
 <script setup>
 import {storeToRefs} from 'pinia'
 import {useLayoutStore} from "@/store/modules/layout.js";
+import {toggleTheme} from "@/utils/theme.js";
 
 const title = import.meta.env.VITE_BASE_TITLE
 
@@ -22,14 +23,20 @@ const loginRules = {
   ]
 }
 
+function onLogin() {
+  console.log(loginForm)
+}
+
+function onSwitchContainerClick(event) {
+  toggleTheme(event)
+}
 </script>
 
 <template>
   <main class="login-background">
     <aside class="login-img"></aside>
     <section class="login-content" role="main">
-      <div class="login-content-header">
-        <span class="login-content-header-title">{{ title }}</span>
+      <div class="login-content-header" @click="onSwitchContainerClick">
         <el-switch v-model="darkMode">
           <template #active-action>
             <el-icon>
@@ -44,18 +51,36 @@ const loginRules = {
         </el-switch>
       </div>
       <div class="login-content-form">
-        <el-card shadow="always">
-          <el-form ref="loginForm" :model="loginForm" :rules="loginRules" label-width="80px">
-            <el-form-item label="用户名" prop="username">
-              <el-input v-model="loginForm.username" placeholder="请输入用户名"></el-input>
+        <el-card shadow="always" class="card-content">
+          <div class="card-content-title">{{ title }}</div>
+          <el-form ref="loginForm" :model="loginForm" :rules="loginRules" label-width="auto">
+            <el-form-item prop="username">
+              <el-input v-model="loginForm.username" placeholder="请输入用户名">
+                <template #prefix>
+                  <el-icon>
+                    <i-ep:user/>
+                  </el-icon>
+                </template>
+              </el-input>
             </el-form-item>
-            <el-form-item label="密码" prop="password">
-              <el-input v-model="loginForm.password" placeholder="请输入密码"></el-input>
+            <el-form-item prop="password">
+              <el-input v-model="loginForm.password" placeholder="请输入密码" show-password>
+                <template #prefix>
+                  <el-icon>
+                    <i-ep:lock/>
+                  </el-icon>
+                </template>
+              </el-input>
             </el-form-item>
             <el-form-item>
-              <el-button type="primary" @click="login">登录</el-button>
+
             </el-form-item>
           </el-form>
+          <el-row justify="space-evenly">
+            <el-col :span="6">
+              <el-button type="primary" @click="onLogin">登录</el-button>
+            </el-col>
+          </el-row>
         </el-card>
       </div>
     </section>
@@ -84,13 +109,7 @@ const loginRules = {
       padding: 1.5rem;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-
-      .login-content-header-title {
-        //color: #ffffff;
-        font-size: 1.5rem;
-        font-weight: 700;
-      }
+      justify-content: flex-end;
     }
 
     .login-content-form {
@@ -98,7 +117,18 @@ const loginRules = {
       flex-grow: 1;
       align-items: center;
       justify-content: center;
-      padding: 1.5rem;
+
+      .card-content {
+        width: 65%;
+
+        .card-content-title {
+          //color: #ffffff;
+          font-size: 1.5rem;
+          font-weight: 700;
+          text-align: center;
+          margin: 2rem;
+        }
+      }
     }
   }
 }
@@ -110,5 +140,18 @@ const loginRules = {
   #app .login-content {
     width: 50%;
   }
+  //.login-background {
+  //  .login-img {
+  //    display: block;
+  //    min-width: 400px;
+  //    max-width: 600px;
+  //    height: 600px;
+  //  }
+  //  .login-content {
+  //    width: 50%;
+  //    max-width: 500px;
+  //  }
+  //}
 }
+
 </style>

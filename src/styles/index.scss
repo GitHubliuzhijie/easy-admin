@@ -2,6 +2,9 @@
 
 @use 'element-plus/theme-chalk/dark/css-vars.css';
 
+@use "./theme";
+@use "./common";
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
