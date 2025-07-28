@@ -1,0 +1,15 @@
+@use "normalize.css";
+@use "element-plus/dist/index.css";
+@use "./element-variables.scss";
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
