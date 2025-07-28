@@ -12,13 +12,15 @@ export default defineConfig({
             resolvers: [ElementPlusResolver()],
         }),
         Components({
-            resolvers: [ElementPlusResolver()],
+            resolvers: [ElementPlusResolver({ importStyle: 'sass' })],
         })
     ],
     css: {
         preprocessorOptions: {
-            scss: {api: 'modern-compiler'},
-        }
+            scss: {
+                additionalData: `@use "@/styles/element-variables.scss" as *;`,
+            },
+        },
     },
     resolve: {
         alias: {

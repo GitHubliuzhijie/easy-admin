@@ -1,12 +1,12 @@
 @use "normalize.css";
-@use "element-plus/dist/index.css";
-@use "./element-variables.scss";
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 html, body {
   height: 100%;
   width: 100%;
-  box-sizing: border-box;
 }
 
 #app {
