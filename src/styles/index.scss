@@ -1,5 +1,7 @@
 @use "normalize.css";
 
+@use 'element-plus/theme-chalk/dark/css-vars.css';
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
