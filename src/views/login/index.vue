@@ -1,7 +1,7 @@
 <script setup>
 import {storeToRefs} from 'pinia'
 import {useLayoutStore} from "@/store/modules/layout.js";
-import {toggleTheme} from "@/utils/theme.js";
+import {toggleTheme} from "@/utils/toggleTheme.js";
 
 const title = import.meta.env.VITE_BASE_TITLE
 
