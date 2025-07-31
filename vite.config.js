@@ -1,4 +1,5 @@
 import {defineConfig} from 'vite'
+import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import Icons from 'unplugin-icons/vite'
@@ -10,6 +11,7 @@ import path from 'path';
 export default defineConfig({
     plugins: [
         vue(),
+        UnoCSS(),
         AutoImport({
             imports: [
                 'vue', // 自动导入 Vue 的 API，如 ref、reactive 等

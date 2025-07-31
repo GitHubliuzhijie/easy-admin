@@ -32,12 +32,12 @@
 }
 
 ::view-transition-new(root) {
-  z-index: 2147483646;
+  z-index: 999999;
 }
 
 /* 设置暗色模式下的层级顺序（与亮色模式相反） */
 .dark::view-transition-old(root) {
-  z-index: 2147483646;
+  z-index: 999999;
 }
 
 .dark::view-transition-new(root) {
