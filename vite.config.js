@@ -9,6 +9,10 @@ import vue from '@vitejs/plugin-vue'
 import path from 'path';
 
 export default defineConfig({
+    server: {
+        host: '0.0.0.0', // 允许外部访问
+        port: 3000,      // 指定端口
+    },
     plugins: [
         vue(),
         UnoCSS(),
@@ -25,7 +29,7 @@ export default defineConfig({
             resolvers: [
                 ElementPlusResolver({importStyle: 'sass'}),
                 IconsResolver({
-                    // prefix: 'i', 默认前缀是‘i’
+                    prefix: 'i', // 默认前缀是‘i’
                     enabledCollections: ['ep'] // 使用哪个图标库
                 })
             ],
