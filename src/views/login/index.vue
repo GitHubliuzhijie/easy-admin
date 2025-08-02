@@ -4,17 +4,19 @@ import {useLayoutStore} from "@/store/modules/layout.js";
 import {toggleTheme} from "@/utils/toggleTheme.js";
 
 import PageFooter from "@/components/PageFooter/index.vue"
+import {useUserStore} from "@/store/modules/user.js";
 
 const title = import.meta.env.VITE_BASE_TITLE
 
 const layoutStore = useLayoutStore()
+const userStore = useUserStore();
 const {darkMode} = storeToRefs(layoutStore)
 
 const loading = ref(false)
 
 const loginForm = reactive({
-  username: 'admin',
-  password: '123456',
+  username: '',
+  password: '',
   remember: false
 })
 
@@ -29,8 +31,23 @@ const loginRules = {
   ]
 }
 
+onMounted(() => {
+  const userInfo = userStore.getUserInfo
+  if (userInfo.remember) {
+    loginForm.username = userInfo.username
+    loginForm.password = userInfo.password
+    loginForm.remember = true
+  }
+})
+
 function handleLogin() {
   console.log(loginForm)
+  userStore.setToken('admin')
+  if (loginForm.remember) {
+    userStore.setUserInfo(loginForm)
+  } else {
+    userStore.$resetUserInfo()
+  }
 }
 
 function onSwitchContainerClick(event) {
@@ -143,7 +160,7 @@ function onSwitchContainerClick(event) {
             </el-form-item>
             <div class="flex justify-between items-center mt-2">
               <el-checkbox v-model="loginForm.remember">记住我</el-checkbox>
-              <el-link type="primary" :underline="false">忘记密码?</el-link>
+              <el-link type="primary" underline="never">忘记密码?</el-link>
             </div>
             <el-button
                 type="primary"
@@ -175,10 +192,10 @@ function onSwitchContainerClick(event) {
 
           <div class="mt-8 text-center text-sm text-gray-500">
             还没有账号?
-            <el-link type="primary" :underline="false">立即注册</el-link>
+            <el-link type="primary" underline="never">立即注册</el-link>
           </div>
         </div>
-        <PageFooter />
+        <PageFooter/>
       </div>
     </div>
   </div>
