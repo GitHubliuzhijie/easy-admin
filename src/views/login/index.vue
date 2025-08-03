@@ -1,60 +1,3 @@
-<script setup>
-  import { storeToRefs } from 'pinia'
-  import { useLayoutStore } from '@/store/modules/layout.js'
-  import { toggleTheme } from '@/utils/toggleTheme.js'
-
-  import PageFooter from '@/components/PageFooter/index.vue'
-  import { useUserStore } from '@/store/modules/user.js'
-
-  const title = import.meta.env.VITE_BASE_TITLE
-
-  const layoutStore = useLayoutStore()
-  const userStore = useUserStore()
-  const { darkMode } = storeToRefs(layoutStore)
-
-  const loading = ref(false)
-
-  const loginForm = reactive({
-    username: '',
-    password: '',
-    remember: false
-  })
-
-  const loginRules = {
-    username: [
-      { required: true, message: '请输入用户名', trigger: 'blur' },
-      { min: 3, max: 10, message: '长度在 3 到 10 个字符', trigger: 'blur' }
-    ],
-    password: [
-      { required: true, message: '请输入密码', trigger: 'blur' },
-      { min: 6, max: 20, message: '长度在 6 到 20 个字符', trigger: 'blur' }
-    ]
-  }
-
-  onMounted(() => {
-    const userInfo = userStore.getUserInfo
-    if (userInfo.remember) {
-      loginForm.username = userInfo.username
-      loginForm.password = userInfo.password
-      loginForm.remember = true
-    }
-  })
-
-  function handleLogin() {
-    console.log(loginForm)
-    userStore.setToken('admin')
-    if (loginForm.remember) {
-      userStore.setUserInfo(loginForm)
-    } else {
-      userStore.$resetUserInfo()
-    }
-  }
-
-  function onSwitchContainerClick(event) {
-    toggleTheme(event)
-  }
-</script>
-
 <template>
   <div class="min-h-screen flex bg-gray-50">
     <!-- 左侧展示 -->
@@ -215,4 +158,61 @@
     </div>
   </div>
 </template>
+
+<script setup>
+  import { storeToRefs } from 'pinia'
+  import { useLayoutStore } from '@/store/modules/layout.js'
+  import { toggleTheme } from '@/utils/toggleTheme.js'
+
+  import PageFooter from '@/components/PageFooter/index.vue'
+  import { useUserStore } from '@/store/modules/user.js'
+
+  const title = import.meta.env.VITE_BASE_TITLE
+
+  const layoutStore = useLayoutStore()
+  const userStore = useUserStore()
+  const { darkMode } = storeToRefs(layoutStore)
+
+  const loading = ref(false)
+
+  const loginForm = reactive({
+    username: '',
+    password: '',
+    remember: false
+  })
+
+  const loginRules = {
+    username: [
+      { required: true, message: '请输入用户名', trigger: 'blur' },
+      { min: 3, max: 10, message: '长度在 3 到 10 个字符', trigger: 'blur' }
+    ],
+    password: [
+      { required: true, message: '请输入密码', trigger: 'blur' },
+      { min: 6, max: 20, message: '长度在 6 到 20 个字符', trigger: 'blur' }
+    ]
+  }
+
+  onMounted(() => {
+    const userInfo = userStore.getUserInfo
+    if (userInfo.remember) {
+      loginForm.username = userInfo.username
+      loginForm.password = userInfo.password
+      loginForm.remember = true
+    }
+  })
+
+  function handleLogin() {
+    console.log(loginForm)
+    userStore.setToken('admin')
+    if (loginForm.remember) {
+      userStore.setUserInfo(loginForm)
+    } else {
+      userStore.$resetUserInfo()
+    }
+  }
+
+  function onSwitchContainerClick(event) {
+    toggleTheme(event)
+  }
+</script>
 <style scoped lang="scss"></style>

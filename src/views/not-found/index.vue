@@ -1,21 +1,3 @@
-<script setup>
-  import PageFooter from '@/components/PageFooter/index.vue'
-
-  import { useRouter } from 'vue-router'
-  const router = useRouter()
-
-  const goHome = () => {
-    router.push('/')
-    window.location.href = '/'
-  }
-  const goBack = () => {
-    router.back()
-  }
-  const contactSupport = () => {
-    window.location.href = 'https://github.com/GitHubliuzhijie/easy-admin-vue3'
-  }
-</script>
-
 <template>
   <div
     class="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-4 text-gray-800"
@@ -36,20 +18,20 @@
       <!-- 操作按钮 -->
       <div class="flex flex-wrap justify-center gap-4 w-full max-w-xl mb-12">
         <button
-          @click="goHome"
           class="px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2"
+          @click="goHome"
         >
           <i-ep:house /> 返回首页
         </button>
         <button
-          @click="goBack"
           class="px-8 py-4 bg-white text-blue-600 border border-blue-200 font-semibold rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2"
+          @click="goBack"
         >
           <i-ep:back /> 返回上一页
         </button>
         <button
-          @click="contactSupport"
           class="px-8 py-4 bg-white text-indigo-600 border border-indigo-200 font-semibold rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2"
+          @click="contactSupport"
         >
           <i-ep:phone-filled /> 联系支持
         </button>
@@ -78,5 +60,23 @@
     </div>
   </div>
 </template>
+
+<script setup>
+  import PageFooter from '@/components/PageFooter/index.vue'
+
+  import { useRouter } from 'vue-router'
+  const router = useRouter()
+
+  const goHome = () => {
+    router.push('/')
+    window.location.href = '/'
+  }
+  const goBack = () => {
+    router.back()
+  }
+  const contactSupport = () => {
+    window.location.href = 'https://github.com/GitHubliuzhijie/easy-admin-vue3'
+  }
+</script>
 
 <style scoped></style>
