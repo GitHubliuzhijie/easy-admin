@@ -1,3 +1,2 @@
 import { defineConfig } from 'unocss'
-export default defineConfig({
-})
+export default defineConfig({})

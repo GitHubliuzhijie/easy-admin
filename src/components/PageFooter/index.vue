@@ -1,8 +1,8 @@
 <script setup>
-defineOptions({
-  name: 'PageFooter'
-})
-const title = import.meta.env.VITE_BASE_TITLE
+  defineOptions({
+    name: 'PageFooter'
+  })
+  const title = import.meta.env.VITE_BASE_TITLE
 </script>
 
 <template>
@@ -12,6 +12,4 @@ const title = import.meta.env.VITE_BASE_TITLE
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

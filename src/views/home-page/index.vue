@@ -1,11 +1,5 @@
-<script setup>
+<script setup></script>
 
-</script>
+<template>首页</template>
 
-<template>
-  首页
-</template>
-
-<style scoped>
-
-</style>
+<style scoped></style>

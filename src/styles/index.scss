@@ -1,14 +1,17 @@
-@use "normalize.css";
+@use 'normalize.css';
 
 @use 'element-plus/theme-chalk/dark/css-vars.css';
 
-@use "./theme";
+@use './theme';
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
