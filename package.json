@@ -9,7 +9,34 @@
     "preview": "vite preview",
     "lint": "eslint",
     "fix": "eslint --fix",
-    "lint:prettier": "prettier --write \"**/*.{js,cjs,ts,json,tsx,css,less,scss,vue,html,md}\""
+    "lint:prettier": "prettier --write \"**/*.{js,cjs,ts,json,tsx,css,less,scss,vue,html,md}\"",
+    "lint:lint-staged": "lint-staged",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,ts,mjs,mts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{cjs,json,jsonc}": [
+      "prettier --write"
+    ],
+    "*.vue": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{html,htm}": [
+      "prettier --write"
+    ],
+    "*.{scss,css,less}": [
+      "prettier --write"
+    ],
+    "*.{md,mdx}": [
+      "prettier --write"
+    ],
+    "*.{yaml,yml}": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "@vueuse/core": "^13.5.0",
@@ -28,6 +55,8 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.3",
     "eslint-plugin-vue": "^10.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
     "prettier": "^3.6.2",
     "sass": "^1.89.2",
     "sass-loader": "^16.0.5",
