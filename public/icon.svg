@@ -1,35 +1,16 @@
-<svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-        <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#93c5fd" />
-            <stop offset="100%" stop-color="#6366f1" />
-        </linearGradient>
-        <linearGradient id="logo-gradient-dark" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#60a5fa" />
-            <stop offset="100%" stop-color="#4f46e5" />
-        </linearGradient>
-    </defs>
-
-    <!-- 立方体顶部 -->
-    <polygon points="30,40 50,30 70,40 50,50" fill="url(#logo-gradient)" opacity="0.9"/>
-
-    <!-- 立方体正面 -->
-    <polygon points="30,40 30,70 50,80 50,50" fill="url(#logo-gradient-dark)"/>
-
-    <!-- 立方体侧面 -->
-    <polygon points="50,50 50,80 70,70 70,40" fill="url(#logo-gradient)" opacity="0.7"/>
-
-    <!-- 装饰线条 -->
-    <line x1="30" y1="40" x2="50" y2="30" stroke="white" stroke-width="2"/>
-    <line x1="50" y1="30" x2="70" y2="40" stroke="white" stroke-width="2"/>
-    <line x1="70" y1="40" x2="70" y2="70" stroke="white" stroke-width="2"/>
-    <line x1="70" y1="70" x2="50" y2="80" stroke="white" stroke-width="2"/>
-    <line x1="50" y1="80" x2="30" y2="70" stroke="white" stroke-width="2"/>
-    <line x1="30" y1="70" x2="30" y2="40" stroke="white" stroke-width="2"/>
-    <line x1="30" y1="70" x2="50" y2="80" stroke="white" stroke-width="2"/>
-    <line x1="50" y1="50" x2="50" y2="80" stroke="white" stroke-width="2"/>
-
-    <!-- 立方体内部结构 -->
-    <line x1="50" y1="30" x2="50" y2="50" stroke="white" stroke-width="2" stroke-dasharray="4,2"/>
-    <line x1="70" y1="40" x2="50" y2="50" stroke="white" stroke-width="2" stroke-dasharray="4,2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+    <rect width="16" height="16" fill="#2563EB" rx="3"/>
+    <g fill="#EFF6FF">
+        <!-- 简化齿轮 -->
+        <rect x="4" y="2" width="2" height="4" rx="1"/>
+        <rect x="10" y="2" width="2" height="4" rx="1"/>
+        <rect x="2" y="4" width="4" height="2" rx="1"/>
+        <rect x="10" y="4" width="4" height="2" rx="1"/>
+        <rect x="4" y="10" width="2" height="4" rx="1"/>
+        <rect x="10" y="10" width="2" height="4" rx="1"/>
+        <rect x="2" y="10" width="4" height="2" rx="1"/>
+        <rect x="10" y="10" width="4" height="2" rx="1"/>
+        <!-- 中心点 -->
+        <circle cx="8" cy="8" r="2"/>
+    </g>
 </svg>
