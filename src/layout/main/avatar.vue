@@ -59,10 +59,10 @@ function onMenuClick({ key }) {
       <div class="menu-container">
         <div class="user-info">
           <div class="avatar">
-            <img :src="AvatarImg" />
+            <img :src="AvatarImg"  alt=""/>
           </div>
           <div class="name">Easy</div>
-          <a-tag style="margin: 0" color="green">在线</a-tag>
+          <a-tag class="m-0" color="green">在线</a-tag>
         </div>
         <a-divider style="margin: 8px 0 0 0" />
         <a-menu :items="menuList" :selectable="false" @click="onMenuClick"></a-menu>

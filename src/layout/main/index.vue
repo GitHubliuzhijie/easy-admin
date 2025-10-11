@@ -301,7 +301,9 @@ window.addEventListener('resize', () => {
       <div class="content-body">
         <router-view v-slot="{ Component }">
           <transition name="scale" mode="out-in">
-            <component v-if="layoutStore.renderRouteView" :is="Component" />
+            <Suspense>
+              <component v-if="layoutStore.renderRouteView" :is="Component" />
+            </Suspense>
           </transition>
         </router-view>
       </div>
