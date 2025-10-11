@@ -7,40 +7,14 @@ defineOptions({
 </script>
 
 <template>
-  <div class="page-container">
-    <div class="body">
-      <div class="content">
-        <h1>开启牛马的一天</h1>
-        <div class="img-container">
-          <working-svg class="img"></working-svg>
+  <div class="p-4 h-full">
+    <div class="h-full rounded-lg bg-[var(--easy-color-bg-container)] flex justify-center items-center">
+      <div class="text-center">
+        <h1 class="text-center mb-6">开启牛马的一天</h1>
+        <div class="flex justify-center">
+          <working-svg class="h-full text-[var(--easy-color-text)]"></working-svg>
         </div>
       </div>
     </div>
   </div>
 </template>
-
-<style scoped>
-.page-container {
-  padding: 16px;
-  height: 100%;
-}
-.body {
-  height: 100%;
-  border-radius: 8px;
-  background: var(--easy-color-bg-container);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.content h1 {
-  text-align: center;
-}
-.img-container {
-  display: flex;
-  justify-content: center;
-}
-.img-container .img {
-  height: 100%;
-  color: var(--easy-color-text);
-}
-</style>

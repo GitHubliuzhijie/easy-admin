@@ -1,16 +1,23 @@
 <template>
-  <div class="iframe-container">
-    <div v-if="loading" class="loading">Loading...</div>
-    <div v-if="error" class="error">
+  <div class="relative w-full h-full overflow-hidden">
+    <div v-if="loading" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-5 bg-white bg-opacity-90 rounded-lg text-center">
+      Loading...
+    </div>
+    <div v-if="error" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-5 bg-white bg-opacity-90 rounded-lg text-center">
       Failed to load iframe
-      <button @click="reload">Retry</button>
+      <button
+        @click="reload"
+        class="mt-2.5 px-4 py-1 bg-blue-500 text-white border-none rounded cursor-pointer hover:bg-blue-600"
+      >
+        Retry
+      </button>
     </div>
     <iframe
       ref="iframeRef"
       :src="src"
       @load="onLoad"
       @error="onError"
-      class="iframe-content"
+      class="w-full h-full min-h-[600px]"
       frameborder="0"
       sandbox="allow-scripts allow-same-origin"
     ></iframe>
@@ -67,40 +74,3 @@ watch(
   },
 );
 </script>
-
-<style scoped>
-.iframe-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.iframe-content {
-  width: 100%;
-  height: 100%;
-  min-height: 600px;
-}
-
-.loading,
-.error {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 8px;
-  text-align: center;
-}
-
-.error button {
-  margin-top: 10px;
-  padding: 5px 15px;
-  background: #409eff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-</style>

@@ -6,6 +6,7 @@ import { FileSystemIconLoader } from 'unplugin-icons/loaders';
 import EasyIconLoader from './plugins/easy-icon-loader';
 import EasyAsyncViewMap from './plugins/easy-async-view-map';
 import RestartOnFolderChange from './plugins/restart-on-folder-change';
+import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -17,6 +18,7 @@ export default defineConfig({
       targetDir: './src/assets/icons',
     }),
     vue(),
+    tailwindcss(),
     Icons({
       compiler: 'vue3',
       autoInstall: true,

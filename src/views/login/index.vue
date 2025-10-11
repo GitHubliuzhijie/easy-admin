@@ -33,28 +33,41 @@ async function onLogin() {
 
   userStore.setToken('ok');
 
-  router.push(projectConfig.homeRoutePath);
+  await router.push(projectConfig.homeRoutePath);
 }
 </script>
 
 <template>
-  <div class="login-view-container">
+  <div class="h-screen w-screen overflow-auto flex text-[var(--easy-color-text)]">
     <div
-      class="left-content"
+      class="xl:flex-1 xl:overflow-hidden xl:relative"
       :style="{
         background: layoutStore.darkMode
           ? '#141414'
           : 'linear-gradient(to right, #458cfb, #f2f6fe)',
       }"
     >
-      <div class="background-deep">
-        <div class="background-inner"></div>
-        <div class="background-img"></div>
+      <div class="w-full h-full bg-[#f0f2f5] dark:bg-[#141414]">
+        <div
+          class="w-full h-full"
+          :style="{
+            background: 'linear-gradient(154deg, #07070915 30%, color-mix(in srgb, var(--easy-primary-color) 30%, transparent) 48%, #07070915 64%)',
+            filter: 'blur(100px)'
+          }"
+        ></div>
+        <div
+          class="absolute w-full h-full left-0 top-0 bg-[url('@src/assets/imgs/login-bg.svg')] bg-[50%] bg-no-repeat"
+          style="background-size: 50%;"
+        ></div>
       </div>
     </div>
-    <div class="right-content">
-      <div class="header">
-        <span class="title"> {{ projectConfig.projectName }} </span>
+    <div
+      class="w-full xl:w-[34%] flex flex-col bg-[var(--easy-color-bg-container)] xl:border-l"
+      :class="{'dark:bg-[#141414]': layoutStore.darkMode}"
+      :style="{borderLeft: 'var(--easy-border)'}"
+    >
+      <div class="p-6 flex-none flex items-center justify-between">
+        <span class="text-[var(--easy-color-text)] text-2xl font-bold"> {{ projectConfig.projectName }} </span>
         <a-switch
           checked-children="深色"
           un-checked-children="浅色"
@@ -62,18 +75,13 @@ async function onLogin() {
           @change="(_, e) => onDarkModeChange(e)"
         />
       </div>
-      <div class="main">
+      <div class="flex-grow flex items-center justify-center p-6">
         <div
-          class="form-content"
-          :style="{
-            shadow: layoutStore.darkMode
-              ? ''
-              : '0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgb(0 0 0 / 0.25)',
-            background: layoutStore.darkMode ? '' : '#ffffffaa',
-          }"
+          class="w-full max-w-[360px] rounded-lg p-6"
+          :class="{'shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] bg-[#ffffffaa]': !layoutStore.darkMode}"
         >
-          <div class="form-content-title">登录</div>
-          <div class="form-content-form">
+          <div class="text-2xl leading-8">登录</div>
+          <div class="pt-4">
             <a-form ref="formRef">
               <a-form-item name="username">
                 <a-input placeholder="账号"></a-input>
@@ -83,7 +91,7 @@ async function onLogin() {
               </a-form-item>
               <a-form-item>
                 <a-button
-                  class="form-content-form-login-btn"
+                  class="w-full"
                   type="primary"
                   html-type="submit"
                   @click="onLogin"
@@ -95,117 +103,7 @@ async function onLogin() {
           </div>
         </div>
       </div>
-      <div class="footer">MIT Licensed | Copyright © 2024</div>
+      <div class="flex-none p-6 text-center text-sm text-[#66748b]">MIT Licensed | Copyright © 2024</div>
     </div>
   </div>
 </template>
-
-<style scoped>
-.login-view-container {
-  height: 100vh;
-  width: 100vw;
-  overflow: auto;
-  display: flex;
-  color: var(--easy-color-text);
-}
-.background-img {
-  background-size: 50%;
-  background: url('@src/assets/imgs/login-bg.svg') no-repeat center;
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-}
-.right-content {
-  width: 100%;
-  flex: none;
-  display: flex;
-  flex-direction: column;
-  background: var(--easy-color-bg-container);
-}
-.header {
-  padding: 1.5rem;
-  display: flex;
-  flex: none;
-  align-items: center;
-  justify-content: space-between;
-}
-.header .title {
-  color: var(--easy-color-text);
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-.main {
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem;
-}
-.form-content {
-  width: 100%;
-  max-width: 360px;
-  border-radius: 0.5rem;
-  padding: 1.5rem;
-}
-.form-content-title {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-.form-content-form {
-  padding-top: 1rem;
-}
-.form-content-form-login-btn {
-  width: 100%;
-}
-.footer {
-  flex: none;
-  padding: 1.5rem;
-  text-align: center;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  color: #66748b;
-}
-@media (min-width: 1280px) {
-  .left-content {
-    flex: 1;
-    overflow: hidden;
-    position: relative;
-  }
-  .background-img {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  .background-deep {
-    background: #f0f2f5;
-    width: 100%;
-    height: 100%;
-  }
-  .background-inner {
-    background: linear-gradient(
-      154deg,
-      #07070915 30%,
-      color-mix(in srgb, var(--easy-primary-color) 30%, transparent) 48%,
-      #07070915 64%
-    );
-    width: 100%;
-    height: 100%;
-    filter: blur(100px);
-  }
-  .right-content {
-    flex: none;
-    width: 34%;
-
-    border-left: var(--easy-border);
-  }
-  [data-theme='dark'] .background-deep {
-    background: #141414;
-  }
-  [data-theme='dark'] .right-content {
-    background: #141414;
-  }
-}
-</style>
