@@ -12,7 +12,7 @@ function generateCustomIconsList() {
 
 export default function easyIconLoader() {
   const virtualModuleId = 'virtual:easy-icon-loader';
-  const resolvedVirtualModuleId = '\0' + virtualModuleId;
+  const resolvedVirtualModuleId = virtualModuleId;
 
   return {
     name: 'easy-icon-loader',
