@@ -1,11 +1,7 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
-  电子
+  <div>电子</div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

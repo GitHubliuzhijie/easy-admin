@@ -98,7 +98,7 @@ async function secondaryMenuSelectHandler({ item, keyPath }) {
   if (isEqual(keyPath, layoutStore.secondaryMenuActiveKey)) {
     return;
   }
-  router.push(item.path);
+  await router.push(item.path);
 }
 
 function toggleMenuCollapsedHandler() {
