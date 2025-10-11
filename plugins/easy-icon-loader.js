@@ -10,7 +10,7 @@ function generateCustomIconsList() {
   return svgFiles;
 }
 
-export default function niumaIconLoader() {
+export default function easyIconLoader() {
   const virtualModuleId = 'virtual:easy-icon-loader';
   const resolvedVirtualModuleId = '\0' + virtualModuleId;
 

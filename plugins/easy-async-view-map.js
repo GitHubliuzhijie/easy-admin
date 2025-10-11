@@ -32,7 +32,7 @@ function generateAsyncViewMap(options) {
   return result;
 }
 
-export default function niumaAsyncViewMap(options = {}) {
+export default function easyAsyncViewMap(options = {}) {
   const virtualModuleId = 'virtual:easy-async-view-map';
   const resolvedVirtualModuleId = '\0' + virtualModuleId;
   const currentOptions = Object.assign({}, defaultOptions, options);

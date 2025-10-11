@@ -3,16 +3,16 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import Icons from 'unplugin-icons/vite';
 import { FileSystemIconLoader } from 'unplugin-icons/loaders';
-import NiuMaIconLoader from './plugins/easy-icon-loader';
-import NiuMaAsyncViewMap from './plugins/easy-async-view-map';
+import EasyIconLoader from './plugins/easy-icon-loader';
+import EasyAsyncViewMap from './plugins/easy-async-view-map';
 import RestartOnFolderChange from './plugins/restart-on-folder-change';
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     // 用于处理 v-icon 组件
-    NiuMaIconLoader(),
-    NiuMaAsyncViewMap(),
+    EasyIconLoader(),
+    EasyAsyncViewMap(),
     RestartOnFolderChange({
       targetDir: './src/assets/icons',
     }),
