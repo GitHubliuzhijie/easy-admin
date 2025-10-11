@@ -1,0 +1,27 @@
+:root {
+  --easy-border-color: rgba(5, 5, 5, 0.06);
+  --easy-scrollbar-bg: #ffffff;
+  --easy-scrollbar-thumb-bg: #b2b2b2;
+  --easy-scrollbar-thumb-bg-hover: #7f7f7f;
+  --easy-border: 1px solid var(--easy-border-color);
+}
+
+[data-theme='dark']:root {
+  --easy-border-color: rgba(253, 253, 253, 0.12);
+  --easy-scrollbar-bg: #2c2c2c;
+  --easy-scrollbar-thumb-bg: #9f9f9f;
+  --easy-scrollbar-thumb-bg-hover: #d1d1d1;
+}
+
+/* dark mode 过渡动画 */
+/* ::view-transition-new(root),
+::view-transition-old(root) {
+  animation: none;
+}
+[data-theme='dark']::view-transition-old(root) {
+  z-index: 100;
+} */
+
+.ant-menu-dark {
+  background: var(--easy-color-bg-container);
+}
