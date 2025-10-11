@@ -17,11 +17,11 @@ export function getMenu() {
         {
           key: 'electronicGiftBook',
           title: '电子礼簿',
-          path: '/electronicGiftBook',
+          path: '/electronic-gift-book',
           meta: {
             icon: 'ant-design-icon-book-outlined',
             layout: 'main',
-            component: 'overview',
+            component: 'electronic-gift-book',
           }
         }
       ]);

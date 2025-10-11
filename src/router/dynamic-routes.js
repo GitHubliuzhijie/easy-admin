@@ -1,8 +1,8 @@
 import { defineComponent, h } from 'vue';
-import NiuMaAsyncViewMap from 'virtual:easy-async-view-map';
+import EasyAsyncViewMap from 'virtual:easy-async-view-map';
 import router from '@src/router';
 
-const allViewKey = Object.keys(NiuMaAsyncViewMap);
+const allViewKey = Object.keys(EasyAsyncViewMap);
 
 /**
  * 生成路由
@@ -21,7 +21,7 @@ function generateRoutes(config = []) {
         const newItem = {
           ...item,
           component: isInclude
-            ? NiuMaAsyncViewMap[component].component
+            ? EasyAsyncViewMap[component].component
             : defineComponent({
                 name: 'NotHaveView',
                 setup() {
