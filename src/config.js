@@ -39,6 +39,7 @@ const iconsList = [
   'ant-design:menu-unfold-outlined',
   'ant-design:menu-fold-outlined',
   'ant-design:home-filled',
+  'ant-design:book-outlined',
   'flat-color-icons:home',
   'material-symbols:iframe',
   'ic:baseline-insert-emoticon',

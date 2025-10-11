@@ -14,6 +14,16 @@ export function getMenu() {
             outlink: 'https://gitee.com/boss-zhijie/easy-admin.git',
           },
         },
+        {
+          key: 'electronicGiftBook',
+          title: '电子礼簿',
+          path: '/electronicGiftBook',
+          meta: {
+            icon: 'ant-design-icon-book-outlined',
+            layout: 'main',
+            component: 'overview',
+          }
+        }
       ]);
     }, 100);
   });
