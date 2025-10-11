@@ -1,16 +1,21 @@
-import { createApp } from 'vue'
+import { createApp } from 'vue';
+import dayjs from 'dayjs';
+import router from '@src/router';
+import store from '@src/store';
+import App from '@src/App.vue';
+import { initTheme } from '@src/utils/theme';
+import 'dayjs/locale/zh-cn';
+import 'ant-design-vue/dist/reset.css';
+import '@src/styles//theme.css';
+import '@src/styles/scroll.css';
 
-import 'virtual:uno.css'
-import '@/styles/index.scss'
+dayjs.locale('zh-cn');
 
-import router from '@/router/index.js'
-import pinia from '@/store/index.js'
+const app = createApp(App);
 
-const app = createApp(App)
+app.use(store);
+app.use(router);
 
-import App from './App.vue'
+initTheme();
 
-app.use(pinia)
-app.use(router)
-
-app.mount('#app')
+app.mount('#app');

@@ -2,15 +2,15 @@ export default [
   {
     path: '/login',
     name: 'login',
-    component: () => import('@/views/login/index.vue')
+    component: () => import('@src/views/login/index.vue'),
   },
   {
     name: '404',
     path: '/404',
-    component: () => import('@/views/not-found/index.vue')
+    component: () => import('@src/views/not-found/index.vue'),
   },
   {
     path: '/:pathMatch(.*)*',
-    redirect: '/404'
-  }
-]
+    redirect: '/404',
+  },
+];

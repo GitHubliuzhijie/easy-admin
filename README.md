@@ -1,5 +1,24 @@
-# Vue 3 + Vite
+<div align="center">
+  <h1>Easy Admin</h1>
+</div>
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## 简介
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+Easy Admin 是一个免费开源的中后台模板，它采用了 Vue3、Vite、JavaScript 等技术开发，开箱即用，适用于新手 vue 开发者和后端开发者，也适合学习参考。
+
+## 克隆仓库使用
+
+```bash
+# 克隆仓库
+git clone https://gitee.com/du-dudu/easy-admin.git
+# 进入目录
+cd easy-admin
+# 安装依赖
+npm install
+# 运行
+npm run dev
+```
+
+## 许可证
+
+[MIT](./LICENSE)

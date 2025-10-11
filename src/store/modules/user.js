@@ -1,47 +1,33 @@
-import { defineStore } from 'pinia'
+import { ref } from 'vue';
+import { defineStore } from 'pinia';
 
-export const useUserStore = defineStore('user', {
-  state: () => {
+export const useUserStore = defineStore(
+  'user',
+  () => {
+    const token = ref('');
+
+    function getToken() {
+      return token.value;
+    }
+
+    function setToken(value) {
+      token.value = value;
+    }
+
+    function $reset() {
+      token.value = '';
+    }
+
     return {
-      systemToken: '',
-      userInfo: {
-        username: '',
-        password: '',
-        remember: false
-      }
-    }
+      token,
+      getToken,
+      setToken,
+      $reset,
+    };
   },
-  getters: {
-    getToken() {
-      return this.systemToken
+  {
+    persist: {
+      storage: sessionStorage,
     },
-    getUserInfo() {
-      return this.userInfo
-    }
   },
-  actions: {
-    setToken(value) {
-      this.systemToken = value
-    },
-    setUserInfo(userInfo) {
-      this.userInfo = userInfo
-    },
-    $resetToken() {
-      this.systemToken = ''
-    },
-    $resetUserInfo() {
-      this.userInfo = {
-        username: '',
-        password: '',
-        remember: false
-      }
-    },
-    $resetAll() {
-      this.$resetToken()
-      this.$resetUserInfo()
-    }
-  },
-  persist: {
-    storage: localStorage
-  }
-})
+);

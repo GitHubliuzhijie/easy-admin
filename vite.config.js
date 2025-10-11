@@ -1,56 +1,48 @@
-import { defineConfig, loadEnv } from 'vite'
-import UnoCSS from 'unocss/vite'
-import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
-import Icons from 'unplugin-icons/vite'
-import IconsResolver from 'unplugin-icons/resolver'
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-import vue from '@vitejs/plugin-vue'
-import path from 'path'
+import { resolve } from 'path';
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import Icons from 'unplugin-icons/vite';
+import { FileSystemIconLoader } from 'unplugin-icons/loaders';
+import NiuMaIconLoader from './plugins/easy-icon-loader';
+import NiuMaAsyncViewMap from './plugins/easy-async-view-map';
+import RestartOnFolderChange from './plugins/restart-on-folder-change';
 
-export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, process.cwd(), '')
-  const serverPort = env.VITE_SERVER_PORT || 3000
-  return {
-    server: {
-      host: '0.0.0.0', // 允许外部访问
-      port: serverPort // 指定端口
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [
+    // 用于处理 v-icon 组件
+    NiuMaIconLoader(),
+    NiuMaAsyncViewMap(),
+    RestartOnFolderChange({
+      targetDir: './src/assets/icons',
+    }),
+    vue(),
+    Icons({
+      compiler: 'vue3',
+      autoInstall: true,
+      customCollections: {
+        custom: FileSystemIconLoader(resolve(__dirname, 'src', 'assets', 'icons'), (svg) =>
+          svg.replace(/^<svg /, '<svg fill="currentColor" '),
+        ),
+      },
+      iconCustomizer: (collection, icon, props) => {
+        props.width = '1em';
+        props.height = '1em';
+      },
+    }),
+  ],
+  resolve: {
+    alias: {
+      '@src': resolve(__dirname, 'src'),
     },
-    plugins: [
-      vue(),
-      UnoCSS(),
-      AutoImport({
-        imports: [
-          'vue' // 自动导入 Vue 的 API，如 ref、reactive 等
-        ],
-        resolvers: [ElementPlusResolver(), IconsResolver()]
-      }),
-      Components({
-        resolvers: [
-          ElementPlusResolver({ importStyle: 'sass' }),
-          IconsResolver({
-            prefix: 'i', // 默认前缀是‘i’
-            enabledCollections: ['ep'] // 使用哪个图标库
-          })
-        ]
-      }),
-      Icons({
-        compiler: 'vue3', // 指定编译器
-        // 自动安装图标库
-        autoInstall: true
-      })
-    ],
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: `@use "@/styles/element-variables.scss" as *;`
-        }
-      }
+  },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
     },
-    resolve: {
-      alias: {
-        '@': path.resolve(__dirname, './src') // 配置 @ 指向 src 目录
-      }
-    }
-  }
-})
+  },
+});
