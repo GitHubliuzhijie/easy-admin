@@ -17,14 +17,14 @@ const userStore = useUserStore();
 const layoutStore = useLayoutStore();
 
 const menuList = ref([
-  // {
-  //   key: 'doc',
-  //   label: '文档',
-  //   icon: () => h(VIcon, { name: 'ant-design-icon-file-text-outlined' }),
-  // },
-  // {
-  //   type: 'divider',
-  // },
+  {
+    key: 'doc',
+    label: '代码地址',
+    icon: () => h(VIcon, { name: 'ant-design-icon-file-text-outlined' }),
+  },
+  {
+    type: 'divider',
+  },
   {
     key: 'logout',
     label: '退出登录',
@@ -40,7 +40,7 @@ function onMenuClick({ key }) {
       router.replace('/login');
       break;
     case 'doc':
-      window.open('https://easy-admin-doc.salted-fish.top/');
+      window.open('https://gitee.com/boss-zhijie/easy-admin.git');
       break;
     default:
       break;

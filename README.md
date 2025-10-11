@@ -10,7 +10,7 @@ Easy Admin 是一个免费开源的中后台模板，它采用了 Vue3、Vite、
 
 ```bash
 # 克隆仓库
-git clone https://gitee.com/du-dudu/easy-admin.git
+git clone https://gitee.com/boss-zhijie/easy-admin.git
 # 进入目录
 cd easy-admin
 # 安装依赖
