@@ -23,6 +23,17 @@ export function getMenu() {
             layout: 'main',
             component: 'electronic-gift-book',
           }
+        },
+        {
+          key: 'baidu',
+          title: 'baidu',
+          path: '/baidu',
+          meta: {
+            icon: 'ant-design-icon-book-outlined',
+            layout: 'main',
+            component: 'iframe-view',
+            iframeSrc: 'https://www.baidu.com',
+          }
         }
       ]);
     }, 100);

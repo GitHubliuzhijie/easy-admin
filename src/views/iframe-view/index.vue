@@ -27,6 +27,9 @@
 <script setup>
 import { ref, watch, onMounted, onBeforeUnmount } from 'vue';
 
+defineOptions({
+  name: 'IframeView',
+});
 const props = defineProps({
   src: {
     type: String,
