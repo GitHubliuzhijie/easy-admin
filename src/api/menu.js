@@ -25,14 +25,14 @@ export function getMenu() {
           }
         },
         {
-          key: 'baidu',
-          title: 'baidu',
-          path: '/baidu',
+          key: 'bilibili',
+          title: '哔哩哔哩',
+          path: '/bilibili',
           meta: {
             icon: 'ant-design-icon-book-outlined',
             layout: 'main',
             component: 'iframe-view',
-            iframeSrc: 'https://www.baidu.com',
+            iframeSrc: 'https://www.bilibili.com/',
           }
         }
       ]);
