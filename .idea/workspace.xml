@@ -4,33 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94e52f02-d946-49ef-bb26-1befa15bd678" name="更改" comment="chore(project): 初始化项目配置和依赖&#10;&#10;- 添加 IDE 配置文件 (.idea目录) 用于代码风格和项目设置- 配置 Git 子模块和工作区设置&#10;- 初始化后端服务(web-server) 的基础项目结构&#10;- 添加 NestJS 服务器基础依赖和开发依赖&#10;- 配置 ESLint 和 Prettier 用于代码规范&#10;- 设置 Jest 测试环境和配置文件- 添加 npm scripts 用于构建、测试和开发&#10;- 配置 TypeScript 编译选项和支持装饰器的元数据反射&#10;- 添加 .gitignore 文件排除不需要版本控制的文件和目录&#10;- 初始化 README 文档和 package.json 项目描述信息">
-      <change afterPath="$PROJECT_DIR$/.idea/UniappTool.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/web-server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/web-server/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/web-server/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/web-server/eslint.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/web-server/nest-cli.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/web-server/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/web-server/pnpm-lock.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/web-server/src/app.controller.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/web-server/src/app.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/web-server/src/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/web-server/src/app.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/web-server/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/web-server/test/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/web-server/test/jest-e2e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/web-server/tsconfig.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/web-server/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/web/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="94e52f02-d946-49ef-bb26-1befa15bd678" name="更改" comment="chore(project): 初始化项目配置和依赖&#10;&#10;- 初始化后端服务(web-server) 的基础项目结构&#10;- 添加 NestJS 服务器基础依赖和开发依赖&#10;- 配置 ESLint 和 Prettier 用于代码规范&#10;- 设置 Jest 测试环境和配置文件- 添加 npm scripts 用于构建、测试和开发&#10;- 配置 TypeScript 编译选项和支持装饰器的元数据反射&#10;- 添加 .gitignore 文件排除不需要版本控制的文件和目录&#10;- 初始化 README 文档和 package.json 项目描述信息" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,6 +63,7 @@
     "npm.dev.executor": "Run",
     "npm.start.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "D:\\project\\easy-admin\\app\\web\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "ts.external.directory.path": "D:\\project\\easy-admin\\server\\web-server\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -162,7 +137,7 @@
       <workItem from="1760168148165" duration="6789000" />
       <workItem from="1760316425632" duration="10000" />
       <workItem from="1760424345849" duration="2523000" />
-      <workItem from="1760579223245" duration="2036000" />
+      <workItem from="1760579223245" duration="2292000" />
     </task>
     <task id="LOCAL-00001" summary="feat(layout):重构布局系统并集成 Ant Design Vue- 集成 Ant Design Vue 组件库替换原有 Element Plus&#10;-重构登录页面，使用 Ant Design Vue 组件&#10;-重构 404 页面，简化页面结构&#10;- 更新路由配置，支持动态菜单生成&#10;-重构布局状态管理，支持暗黑模式和主题色&#10;- 移除 Element Plus 相关样式和配置文件&#10;- 更新 VSCode 配置文件，推荐 Prettier 插件&#10;- 简化项目配置，移除不必要的环境变量&#10;- 优化页面结构和样式，支持响应式布局- 添加页面刷新功能，提升用户体验">
       <option name="closed" value="true" />
@@ -308,7 +283,47 @@
       <option name="project" value="LOCAL" />
       <updated>1760580635690</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="chore(project): 初始化项目配置和依赖&#10;&#10;- 添加 IDE 配置文件 (.idea目录) 用于代码风格和项目设置- 配置 Git 子模块和工作区设置&#10;- 初始化后端服务(web-server) 的基础项目结构&#10;- 添加 NestJS 服务器基础依赖和开发依赖&#10;- 配置 ESLint 和 Prettier 用于代码规范&#10;- 设置 Jest 测试环境和配置文件- 添加 npm scripts 用于构建、测试和开发&#10;- 配置 TypeScript 编译选项和支持装饰器的元数据反射&#10;- 添加 .gitignore 文件排除不需要版本控制的文件和目录&#10;- 初始化 README 文档和 package.json 项目描述信息">
+      <option name="closed" value="true" />
+      <created>1760581306435</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1760581306435</updated>
+    </task>
+    <task id="LOCAL-00020" summary="chore: 更新.gitignore并调整README中的路径&#10;&#10;- 将.gitignore文件从app/web目录移至根目录&#10;- 扩展.gitignore内容，增加对编译输出、测试、IDE、环境变量等的忽略规则- 更新README.md中进入项目目录的命令，指向新的web应用路径">
+      <option name="closed" value="true" />
+      <created>1760581371345</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1760581371345</updated>
+    </task>
+    <task id="LOCAL-00021" summary="chore(project): 初始化项目配置和依赖&#10;&#10;- 初始化后端服务(web-server) 的基础项目结构&#10;- 添加 NestJS 服务器基础依赖和开发依赖&#10;- 配置 ESLint 和 Prettier 用于代码规范&#10;- 设置 Jest 测试环境和配置文件- 添加 npm scripts 用于构建、测试和开发&#10;- 配置 TypeScript 编译选项和支持装饰器的元数据反射&#10;- 添加 .gitignore 文件排除不需要版本控制的文件和目录&#10;- 初始化 README 文档和 package.json 项目描述信息">
+      <option name="closed" value="true" />
+      <created>1760581487345</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1760581487345</updated>
+    </task>
+    <task id="LOCAL-00022" summary="chore(project): 初始化项目配置和依赖&#10;&#10;- 初始化后端服务(web-server) 的基础项目结构&#10;- 添加 NestJS 服务器基础依赖和开发依赖&#10;- 配置 ESLint 和 Prettier 用于代码规范&#10;- 设置 Jest 测试环境和配置文件- 添加 npm scripts 用于构建、测试和开发&#10;- 配置 TypeScript 编译选项和支持装饰器的元数据反射&#10;- 添加 .gitignore 文件排除不需要版本控制的文件和目录&#10;- 初始化 README 文档和 package.json 项目描述信息">
+      <option name="closed" value="true" />
+      <created>1760581489877</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1760581489877</updated>
+    </task>
+    <task id="LOCAL-00023" summary="chore(project): 初始化项目配置和依赖&#10;&#10;- 初始化后端服务(web-server) 的基础项目结构&#10;- 添加 NestJS 服务器基础依赖和开发依赖&#10;- 配置 ESLint 和 Prettier 用于代码规范&#10;- 设置 Jest 测试环境和配置文件- 添加 npm scripts 用于构建、测试和开发&#10;- 配置 TypeScript 编译选项和支持装饰器的元数据反射&#10;- 添加 .gitignore 文件排除不需要版本控制的文件和目录&#10;- 初始化 README 文档和 package.json 项目描述信息">
+      <option name="closed" value="true" />
+      <created>1760581492375</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1760581492375</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,6 +341,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/server/web-server" />
+    </ignored-roots>
     <MESSAGE value="feat(layout):重构布局系统并集成 Ant Design Vue- 集成 Ant Design Vue 组件库替换原有 Element Plus&#10;-重构登录页面，使用 Ant Design Vue 组件&#10;-重构 404 页面，简化页面结构&#10;- 更新路由配置，支持动态菜单生成&#10;-重构布局状态管理，支持暗黑模式和主题色&#10;- 移除 Element Plus 相关样式和配置文件&#10;- 更新 VSCode 配置文件，推荐 Prettier 插件&#10;- 简化项目配置，移除不必要的环境变量&#10;- 优化页面结构和样式，支持响应式布局- 添加页面刷新功能，提升用户体验" />
     <MESSAGE value="feat(components): 添加颜色选择器组件及相关工具函数&#10;&#10;- 新增颜色选择器面板组件(color-picker-panel.vue)&#10;- 实现调色板组件(palette.vue)支持颜色选择&#10;- 添加颜色选择器触发器组件(color-picker.vue)&#10;- 创建颜色选择器滑块组件(chooser.vue)&#10;- 实现颜色转换工具函数(color.js)支持多种颜色格式转换&#10;- 添加缺失字段检查工具函数(check-missing-fields.js)&#10;- 新增面包屑导航组件(breadcrumb.vue)- 添加用户头像下拉菜单组件(avatar.vue)" />
     <MESSAGE value="chore(plugins):重命名插件文件并更新函数名&#10;&#10;- 将 niuma-async-view-map.js重命名为 easy-async-view-map.js&#10;- 将 niumaIconLoader 函数重命名为 easyIconLoader&#10;- 更新相关函数引用以匹配新的命名规范" />
@@ -344,6 +362,8 @@
     <MESSAGE value="feat(menu): 更新菜单项为哔哩哔哩并调整配置- 将菜单项从百度更改为哔哩哔哩- 更新菜单标题和路径&#10;- 修改iframe源地址为哔哩哔哩官网&#10;- 在vite配置中启用host选项" />
     <MESSAGE value="文件移动" />
     <MESSAGE value="chore(project): 初始化项目配置和依赖&#10;&#10;- 添加 IDE 配置文件 (.idea目录) 用于代码风格和项目设置- 配置 Git 子模块和工作区设置&#10;- 初始化后端服务(web-server) 的基础项目结构&#10;- 添加 NestJS 服务器基础依赖和开发依赖&#10;- 配置 ESLint 和 Prettier 用于代码规范&#10;- 设置 Jest 测试环境和配置文件- 添加 npm scripts 用于构建、测试和开发&#10;- 配置 TypeScript 编译选项和支持装饰器的元数据反射&#10;- 添加 .gitignore 文件排除不需要版本控制的文件和目录&#10;- 初始化 README 文档和 package.json 项目描述信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(project): 初始化项目配置和依赖&#10;&#10;- 添加 IDE 配置文件 (.idea目录) 用于代码风格和项目设置- 配置 Git 子模块和工作区设置&#10;- 初始化后端服务(web-server) 的基础项目结构&#10;- 添加 NestJS 服务器基础依赖和开发依赖&#10;- 配置 ESLint 和 Prettier 用于代码规范&#10;- 设置 Jest 测试环境和配置文件- 添加 npm scripts 用于构建、测试和开发&#10;- 配置 TypeScript 编译选项和支持装饰器的元数据反射&#10;- 添加 .gitignore 文件排除不需要版本控制的文件和目录&#10;- 初始化 README 文档和 package.json 项目描述信息" />
+    <MESSAGE value="chore: 更新.gitignore并调整README中的路径&#10;&#10;- 将.gitignore文件从app/web目录移至根目录&#10;- 扩展.gitignore内容，增加对编译输出、测试、IDE、环境变量等的忽略规则- 更新README.md中进入项目目录的命令，指向新的web应用路径" />
+    <MESSAGE value="chore(project): 初始化项目配置和依赖&#10;&#10;- 初始化后端服务(web-server) 的基础项目结构&#10;- 添加 NestJS 服务器基础依赖和开发依赖&#10;- 配置 ESLint 和 Prettier 用于代码规范&#10;- 设置 Jest 测试环境和配置文件- 添加 npm scripts 用于构建、测试和开发&#10;- 配置 TypeScript 编译选项和支持装饰器的元数据反射&#10;- 添加 .gitignore 文件排除不需要版本控制的文件和目录&#10;- 初始化 README 文档和 package.json 项目描述信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(project): 初始化项目配置和依赖&#10;&#10;- 初始化后端服务(web-server) 的基础项目结构&#10;- 添加 NestJS 服务器基础依赖和开发依赖&#10;- 配置 ESLint 和 Prettier 用于代码规范&#10;- 设置 Jest 测试环境和配置文件- 添加 npm scripts 用于构建、测试和开发&#10;- 配置 TypeScript 编译选项和支持装饰器的元数据反射&#10;- 添加 .gitignore 文件排除不需要版本控制的文件和目录&#10;- 初始化 README 文档和 package.json 项目描述信息" />
   </component>
 </project>
