@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="94e52f02-d946-49ef-bb26-1befa15bd678" name="更改" comment="chore(project): 初始化项目配置和依赖&#10;&#10;- 添加 IDE 配置文件 (.idea目录) 用于代码风格和项目设置- 配置 Git 子模块和工作区设置&#10;- 初始化后端服务(web-server) 的基础项目结构&#10;- 添加 NestJS 服务器基础依赖和开发依赖&#10;- 配置 ESLint 和 Prettier 用于代码规范&#10;- 设置 Jest 测试环境和配置文件- 添加 npm scripts 用于构建、测试和开发&#10;- 配置 TypeScript 编译选项和支持装饰器的元数据反射&#10;- 添加 .gitignore 文件排除不需要版本控制的文件和目录&#10;- 初始化 README 文档和 package.json 项目描述信息">
+      <change afterPath="$PROJECT_DIR$/.idea/UniappTool.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/web-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/web-server/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/web-server/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/web-server/eslint.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/web-server/nest-cli.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/web-server/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/web-server/pnpm-lock.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/web-server/src/app.controller.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/web-server/src/app.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/web-server/src/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/web-server/src/app.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/web-server/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/web-server/test/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/web-server/test/jest-e2e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/web-server/tsconfig.build.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/web-server/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/web/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Composition API Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/layout" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;GitHubliuzhijie&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/GitHubliuzhijie/easy-admin-vue3.git&quot;,
+    &quot;accountId&quot;: &quot;58be0297-864c-4511-a9cc-7f29afd13f66&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="33uRFtcB8GtMInF2emQfobZMX3M" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "javascript.nodejs.core.library.configured.version": "20.18.0",
+    "javascript.nodejs.core.library.typings.version": "20.19.21",
+    "last_opened_file_path": "D:/project/easy-admin/doc/img",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "npm.start.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "D:\\project\\easy-admin\\app\\web\\node_modules\\prettier",
+    "ts.external.directory.path": "D:\\project\\easy-admin\\server\\web-server\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\easy-admin\doc\img" />
+      <recent name="D:\project\niuma-admin\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\easy-admin" />
+      <recent name="D:\project\easy-admin\app\web" />
+      <recent name="D:\project\easy-admin\src\views" />
+      <recent name="D:\project\easy-admin\src\components" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/app/web/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="pnpm" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/server/web-server/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="pnpm" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.start" />
+      <item itemvalue="npm.dev" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-WS-251.26094.131" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="94e52f02-d946-49ef-bb26-1befa15bd678" name="更改" comment="" />
+      <created>1760164869584</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1760164869584</updated>
+      <workItem from="1760164870734" duration="2827000" />
+      <workItem from="1760168148165" duration="6789000" />
+      <workItem from="1760316425632" duration="10000" />
+      <workItem from="1760424345849" duration="2523000" />
+      <workItem from="1760579223245" duration="2036000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat(layout):重构布局系统并集成 Ant Design Vue- 集成 Ant Design Vue 组件库替换原有 Element Plus&#10;-重构登录页面，使用 Ant Design Vue 组件&#10;-重构 404 页面，简化页面结构&#10;- 更新路由配置，支持动态菜单生成&#10;-重构布局状态管理，支持暗黑模式和主题色&#10;- 移除 Element Plus 相关样式和配置文件&#10;- 更新 VSCode 配置文件，推荐 Prettier 插件&#10;- 简化项目配置，移除不必要的环境变量&#10;- 优化页面结构和样式，支持响应式布局- 添加页面刷新功能，提升用户体验">
+      <option name="closed" value="true" />
+      <created>1760168213727</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1760168213727</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat(components): 添加颜色选择器组件及相关工具函数&#10;&#10;- 新增颜色选择器面板组件(color-picker-panel.vue)&#10;- 实现调色板组件(palette.vue)支持颜色选择&#10;- 添加颜色选择器触发器组件(color-picker.vue)&#10;- 创建颜色选择器滑块组件(chooser.vue)&#10;- 实现颜色转换工具函数(color.js)支持多种颜色格式转换&#10;- 添加缺失字段检查工具函数(check-missing-fields.js)&#10;- 新增面包屑导航组件(breadcrumb.vue)- 添加用户头像下拉菜单组件(avatar.vue)">
+      <option name="closed" value="true" />
+      <created>1760168277409</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1760168277409</updated>
+    </task>
+    <task id="LOCAL-00003" summary="chore(plugins):重命名插件文件并更新函数名&#10;&#10;- 将 niuma-async-view-map.js重命名为 easy-async-view-map.js&#10;- 将 niumaIconLoader 函数重命名为 easyIconLoader&#10;- 更新相关函数引用以匹配新的命名规范">
+      <option name="closed" value="true" />
+      <created>1760168699360</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1760168699360</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat(layout): 更新文档链接为代码地址&#10;&#10;- 修改头像菜单中的文档链接指向代码仓库&#10;- 更新菜单API中的文档标题和链接地址- 修改README中的克隆地址为新的仓库路径">
+      <option name="closed" value="true" />
+      <created>1760168769436</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760168769436</updated>
+    </task>
+    <task id="LOCAL-00005" summary="chore(deps): 初始化项目依赖配置&#10;&#10;- 添加了 ant-design-vue作为主要 UI 框架&#10;- 集成了 dayjs 用于日期处理&#10;- 使用 lodash-es 提供工具函数支持&#10;- 引入 pinia 作为状态管理方案&#10;- 配置 pinia-plugin-persistedstate 实现状态持久化&#10;- 使用 vue 3.5.22作为核心框架- 集成 vue-router 管理路由&#10;- 开发依赖中添加了 @iconify/json 用于图标管理&#10;- 配置 @vitejs/plugin-vue 支持 Vue 单文件组件&#10;- 引入 chokidar用于文件监听- 使用 prettier 格式化代码- 集成 unplugin-icons 处理图标资源- 使用 vite 作为构建工具">
+      <option name="closed" value="true" />
+      <created>1760168786227</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1760168786227</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat(menu): 添加电子礼簿菜单项&#10;&#10;- 在配置文件中新增 'ant-design:book-outlined' 图标&#10;- 在菜单API中添加电子礼簿菜单项&#10;- 设置电子礼簿菜单路径为 '/electronicGiftBook'&#10;- 配置菜单项使用新增图标&#10;- 指定菜单项布局为 'main'&#10;- 设置菜单项组件为 'overview'">
+      <option name="closed" value="true" />
+      <created>1760170117611</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1760170117611</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat(router): 更新异步视图映射变量名并添加电子礼簿页面- 将 NiuMaAsyncViewMap 重命名为 EasyAsyncViewMap- 新增电子礼簿页面组件 (electronic-gift-book/index.vue)- 更新菜单配置中的路径和组件名称为电子礼簿相关&#10;- 修复路由生成逻辑以使用新的异步视图映射变量名">
+      <option name="closed" value="true" />
+      <created>1760170515647</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1760170515647</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix(plugins): 移除虚拟模块ID的前缀&#10;&#10;- 删除了虚拟模块ID前的'\0'字符&#10;- 简化了模块解析逻辑- 修复了模块加载时的路径问题">
+      <option name="closed" value="true" />
+      <created>1760171766631</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1760171766631</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix(router):修复路由跳转异步问题&#10;&#10;- 在菜单点击事件中使用 await 确保路由跳转完成- 清理电子礼簿页面模板中的空标签和样式块">
+      <option name="closed" value="true" />
+      <created>1760171774616</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1760171774616</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat(ui):重构登录页面和iframe页面样式- 引入TailwindCSS并配置相关依赖&#10;- 重写登录页面布局和样式，支持深色模式切换&#10;- 优化iframe页面加载状态和错误提示UI- 移除原有scoped CSS，统一使用原子化CSS类名&#10;- 调整404页面和概览页面的样式实现方式- 更新路由跳转逻辑为异步等待模式">
+      <option name="closed" value="true" />
+      <created>1760172605921</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1760172605921</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat(electronic-gift-book): 初始化页面结构和样式&#10;&#10;- 添加页面基础布局容器- 设置背景色和圆角样式- 引入 padding 和 height 样式类&#10;- 创建内部内容区域结构- 完善模板基本结构框架- 添加 scoped 样式作用域支持">
+      <option name="closed" value="true" />
+      <created>1760172905531</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1760172905531</updated>
+    </task>
+    <task id="LOCAL-00012" summary="修改图片">
+      <option name="closed" value="true" />
+      <created>1760173165308</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1760173165308</updated>
+    </task>
+    <task id="LOCAL-00013" summary="docs(readme): 添加项目截图展示&#10;&#10;- 在 README 中添加登录页面截图&#10;- 在 README 中添加布局页面截图&#10;- 更新文档图片路径引用">
+      <option name="closed" value="true" />
+      <created>1760173227934</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1760173227934</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat(layout): 添加 Suspense 组件以支持异步组件加载&#10;&#10;- 在 avatar.vue 中为 img 标签添加 alt 属性&#10;- 将 a-tag 的内联样式 margin: 0 替换为类名 m-0&#10;- 在 index.vue 的 router-view 中包裹 Suspense 组件以支持异步组件渲染&#10;-保持 transition 动画效果与组件切换的 out-in 模式">
+      <option name="closed" value="true" />
+      <created>1760174071817</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1760174071817</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat(layout): 添加 Suspense 组件以支持异步组件加载&#10;&#10;- 在 avatar.vue 中为 img 标签添加 alt 属性&#10;- 将 a-tag 的内联样式 margin: 0 替换为类名 m-0&#10;- 在 index.vue 的 router-view 中包裹 Suspense 组件以支持异步组件渲染&#10;-保持 transition 动画效果与组件切换的 out-in 模式">
+      <option name="closed" value="true" />
+      <created>1760426469366</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1760426469366</updated>
+    </task>
+    <task id="LOCAL-00016" summary="style(overview): 调整页面容器宽度以优化布局&#10;&#10;-为页面容器添加固定宽度类名 `w-100` 以改善内容对齐&#10;- 维持原有居中布局结构与样式一致性">
+      <option name="closed" value="true" />
+      <created>1760579975606</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1760579975606</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat(menu): 更新菜单项为哔哩哔哩并调整配置- 将菜单项从百度更改为哔哩哔哩- 更新菜单标题和路径&#10;- 修改iframe源地址为哔哩哔哩官网&#10;- 在vite配置中启用host选项">
+      <option name="closed" value="true" />
+      <created>1760579987857</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1760579987857</updated>
+    </task>
+    <task id="LOCAL-00018" summary="文件移动">
+      <option name="closed" value="true" />
+      <created>1760580635690</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1760580635690</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat(layout):重构布局系统并集成 Ant Design Vue- 集成 Ant Design Vue 组件库替换原有 Element Plus&#10;-重构登录页面，使用 Ant Design Vue 组件&#10;-重构 404 页面，简化页面结构&#10;- 更新路由配置，支持动态菜单生成&#10;-重构布局状态管理，支持暗黑模式和主题色&#10;- 移除 Element Plus 相关样式和配置文件&#10;- 更新 VSCode 配置文件，推荐 Prettier 插件&#10;- 简化项目配置，移除不必要的环境变量&#10;- 优化页面结构和样式，支持响应式布局- 添加页面刷新功能，提升用户体验" />
+    <MESSAGE value="feat(components): 添加颜色选择器组件及相关工具函数&#10;&#10;- 新增颜色选择器面板组件(color-picker-panel.vue)&#10;- 实现调色板组件(palette.vue)支持颜色选择&#10;- 添加颜色选择器触发器组件(color-picker.vue)&#10;- 创建颜色选择器滑块组件(chooser.vue)&#10;- 实现颜色转换工具函数(color.js)支持多种颜色格式转换&#10;- 添加缺失字段检查工具函数(check-missing-fields.js)&#10;- 新增面包屑导航组件(breadcrumb.vue)- 添加用户头像下拉菜单组件(avatar.vue)" />
+    <MESSAGE value="chore(plugins):重命名插件文件并更新函数名&#10;&#10;- 将 niuma-async-view-map.js重命名为 easy-async-view-map.js&#10;- 将 niumaIconLoader 函数重命名为 easyIconLoader&#10;- 更新相关函数引用以匹配新的命名规范" />
+    <MESSAGE value="feat(layout): 更新文档链接为代码地址&#10;&#10;- 修改头像菜单中的文档链接指向代码仓库&#10;- 更新菜单API中的文档标题和链接地址- 修改README中的克隆地址为新的仓库路径" />
+    <MESSAGE value="chore(deps): 初始化项目依赖配置&#10;&#10;- 添加了 ant-design-vue作为主要 UI 框架&#10;- 集成了 dayjs 用于日期处理&#10;- 使用 lodash-es 提供工具函数支持&#10;- 引入 pinia 作为状态管理方案&#10;- 配置 pinia-plugin-persistedstate 实现状态持久化&#10;- 使用 vue 3.5.22作为核心框架- 集成 vue-router 管理路由&#10;- 开发依赖中添加了 @iconify/json 用于图标管理&#10;- 配置 @vitejs/plugin-vue 支持 Vue 单文件组件&#10;- 引入 chokidar用于文件监听- 使用 prettier 格式化代码- 集成 unplugin-icons 处理图标资源- 使用 vite 作为构建工具" />
+    <MESSAGE value="feat(menu): 添加电子礼簿菜单项&#10;&#10;- 在配置文件中新增 'ant-design:book-outlined' 图标&#10;- 在菜单API中添加电子礼簿菜单项&#10;- 设置电子礼簿菜单路径为 '/electronicGiftBook'&#10;- 配置菜单项使用新增图标&#10;- 指定菜单项布局为 'main'&#10;- 设置菜单项组件为 'overview'" />
+    <MESSAGE value="feat(router): 更新异步视图映射变量名并添加电子礼簿页面- 将 NiuMaAsyncViewMap 重命名为 EasyAsyncViewMap- 新增电子礼簿页面组件 (electronic-gift-book/index.vue)- 更新菜单配置中的路径和组件名称为电子礼簿相关&#10;- 修复路由生成逻辑以使用新的异步视图映射变量名" />
+    <MESSAGE value="fix(plugins): 移除虚拟模块ID的前缀&#10;&#10;- 删除了虚拟模块ID前的'\0'字符&#10;- 简化了模块解析逻辑- 修复了模块加载时的路径问题" />
+    <MESSAGE value="fix(router):修复路由跳转异步问题&#10;&#10;- 在菜单点击事件中使用 await 确保路由跳转完成- 清理电子礼簿页面模板中的空标签和样式块" />
+    <MESSAGE value="feat(ui):重构登录页面和iframe页面样式- 引入TailwindCSS并配置相关依赖&#10;- 重写登录页面布局和样式，支持深色模式切换&#10;- 优化iframe页面加载状态和错误提示UI- 移除原有scoped CSS，统一使用原子化CSS类名&#10;- 调整404页面和概览页面的样式实现方式- 更新路由跳转逻辑为异步等待模式" />
+    <MESSAGE value="feat(electronic-gift-book): 初始化页面结构和样式&#10;&#10;- 添加页面基础布局容器- 设置背景色和圆角样式- 引入 padding 和 height 样式类&#10;- 创建内部内容区域结构- 完善模板基本结构框架- 添加 scoped 样式作用域支持" />
+    <MESSAGE value="修改图片" />
+    <MESSAGE value="docs(readme): 添加项目截图展示&#10;&#10;- 在 README 中添加登录页面截图&#10;- 在 README 中添加布局页面截图&#10;- 更新文档图片路径引用" />
+    <MESSAGE value="feat(layout): 添加 Suspense 组件以支持异步组件加载&#10;&#10;- 在 avatar.vue 中为 img 标签添加 alt 属性&#10;- 将 a-tag 的内联样式 margin: 0 替换为类名 m-0&#10;- 在 index.vue 的 router-view 中包裹 Suspense 组件以支持异步组件渲染&#10;-保持 transition 动画效果与组件切换的 out-in 模式" />
+    <MESSAGE value="style(overview): 调整页面容器宽度以优化布局&#10;&#10;-为页面容器添加固定宽度类名 `w-100` 以改善内容对齐&#10;- 维持原有居中布局结构与样式一致性" />
+    <MESSAGE value="feat(menu): 更新菜单项为哔哩哔哩并调整配置- 将菜单项从百度更改为哔哩哔哩- 更新菜单标题和路径&#10;- 修改iframe源地址为哔哩哔哩官网&#10;- 在vite配置中启用host选项" />
+    <MESSAGE value="文件移动" />
+    <MESSAGE value="chore(project): 初始化项目配置和依赖&#10;&#10;- 添加 IDE 配置文件 (.idea目录) 用于代码风格和项目设置- 配置 Git 子模块和工作区设置&#10;- 初始化后端服务(web-server) 的基础项目结构&#10;- 添加 NestJS 服务器基础依赖和开发依赖&#10;- 配置 ESLint 和 Prettier 用于代码规范&#10;- 设置 Jest 测试环境和配置文件- 添加 npm scripts 用于构建、测试和开发&#10;- 配置 TypeScript 编译选项和支持装饰器的元数据反射&#10;- 添加 .gitignore 文件排除不需要版本控制的文件和目录&#10;- 初始化 README 文档和 package.json 项目描述信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(project): 初始化项目配置和依赖&#10;&#10;- 添加 IDE 配置文件 (.idea目录) 用于代码风格和项目设置- 配置 Git 子模块和工作区设置&#10;- 初始化后端服务(web-server) 的基础项目结构&#10;- 添加 NestJS 服务器基础依赖和开发依赖&#10;- 配置 ESLint 和 Prettier 用于代码规范&#10;- 设置 Jest 测试环境和配置文件- 添加 npm scripts 用于构建、测试和开发&#10;- 配置 TypeScript 编译选项和支持装饰器的元数据反射&#10;- 添加 .gitignore 文件排除不需要版本控制的文件和目录&#10;- 初始化 README 文档和 package.json 项目描述信息" />
+  </component>
+</project>
